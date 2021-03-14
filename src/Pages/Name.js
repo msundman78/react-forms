@@ -13,9 +13,9 @@ const InputBoxOnSubmitLocalState = (props) => {
   const [ localName, setLocalName ] = useState("Your Name");
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    props.updateName(localName);
-    setLocalName("");
+    e.preventDefault(); // Prevent Default action to block page reload on submit
+    props.updateName(localName); // Update upstream State
+    setLocalName(""); // Clear Input box
   }
   
   return (
@@ -36,9 +36,9 @@ const InputBoxOnSubmitUseRef = (props) => {
   const nameRef = useRef();
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    props.updateName(nameRef.current.value);
-    nameRef.current.value="";
+    e.preventDefault(); // Prevent Default action to block page reload on submit
+    props.updateName(nameRef.current.value); // Update upstream State
+    nameRef.current.value=""; // Clear Input box
   }
   
   return (
