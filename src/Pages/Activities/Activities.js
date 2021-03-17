@@ -44,7 +44,6 @@ const Activities = () => {
   const [showActivityData, setShowActivityData] = useState(false);
 
   const classes = useStyles();
-  const bull = <span className={classes.bullet}>•</span>;
 
   const handleShowActivity = (e) => {
     console.log(e.currentTarget.dataset.id)
