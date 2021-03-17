@@ -46,3 +46,10 @@ padding-left: 0px;
 th:nth-child(2), th:nth-child(4), td:nth-child(2), td:nth-child(4) {
   padding-left: 0px;
 }
+
+.activity {
+  line-height: 1.5;
+}
+.line-wrap {
+  white-space: pre-wrap;
+}
